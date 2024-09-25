@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- id in forms are more useful in javascript -->
+    <form action="/test.php" name="sign_in_form" id="sign_in_form">
+        <!-- the name and the value is for the backend to handle this data from this website behind the scenes -->
+        <div>
+            Email
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div>
+            First Name:
+            <input type="text" name="first_name" value="Darcey">
+        </div>
+        <div>
+            Last Name:
+            <input type="text" name="last_name">
+        </div>
+
+        <div>
+            password
+            <input type="password" name="password">
+        </div>
+
+        <div>
+        Gender
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+        </div>
+
+        <div>
+            Hobbies
+            <input type="checkbox" value="soccer" name="soccer"> Soccer
+            <input type="checkbox" value="mtg" name="mtg"> MTG
+            <input type="checkbox" value="movies" name="movies"> Movies
+        </div>
+
+        <select name="cars">Cars Brand
+            <option value="honda">Honda</option>
+            <option value="kia">Kia</option>
+            <option value="audi">Audi</option>
+            <option value="volvo">Volvo</option>
+        </select>
+
+        <div>
+            Age
+            <input type="number" name="age" value="age">
+        </div>
+
+    <div>
+            <input type="submit">
+            <!-- another way to add a button -->
+            <button>Another button</button>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- the head tag contains meta data about the page -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- the title tag will add a title to the webpage -->
+        <title>Basics 01</title>
+
+        <!-- used for CSS styling elements -->
+        <style>
+            /* this is a comment */
+
+            /*
+                CSS syntax:
+
+                element {
+                    property: value;
+                }
+            */
+
+            h1 {
+                color: blue;
+                background-color: azure;
+            }
+
+            p {
+                color: blueviolet;
+                background-color: bisque;
+            }
+
+            #li01 {
+                color: red;
+            }
+
+            .li02 {
+                color: green;
+            }
+
+            table, td, th {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <!-- the body tag will contain out content -->
+    <body>
+        <!-- navigation/links -->
+        <a href="index.html">home</a>
+        <a href="contact.html">contact</a>
+
+        <!-- text elements -->
+
+        <!-- titles and sub-titles -->
+        <h1>Basics 01</h1>
+
+        <!-- paragraph tag - block of text -->
+        <p>
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum mi est, quis vestibulum orci cursus non. Sed ex ipsum, rhoncus a mattis vel, porttitor a mauris. <br /> Aenean mi urna, mollis id elit eu, dignissim tincidunt magna. Donec sit amet lacinia mauris. Praesent sollicitudin purus ac leo mattis, non rutrum purus cursus. Duis nec suscipit ligula. In blandit eros sit amet massa ultrices tempus. Praesent nec vestibulum velit. In id ex nisl. Fusce nisl sapien, viverra nec tortor a, dignissim luctus massa. Fusce varius commodo metus at pellentesque. </p>
+        
+        <!-- contanier elements-->
+         <!-- used to create sections -->
+          <!-- span tag used to style a certian thing -->
+        <div style="background-color: rgb(190, 124, 25);">
+            <h2>container div tag</h2>
+            <p>Lorem ipsum <span style="color: white">dolor </span>sit amet consectetur adipisicing elit. Ducimus, esse?</p>
+        </div>
+
+        <!-- Lists -->
+          <div>
+              <!-- unordered lists -->
+            <h3 title="h3 title">unordered lists</h3>
+            <ul>
+                <li id="li01">item 1</li>
+                <li class="li02">item 2</li>
+                <li>item 3</li>
+              </ul>
+
+              <!-- ordered lists -->
+              <h3>ordered lists</h3>
+              <ol>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+              </ol>
+          </div>
+
+          <!-- Images -->
+           <img src="https://cdn.pixabay.com/photo/2024/09/02/13/08/kingfisher-9016787_960_720.jpg" alt="bird" width="320"/>
+
+           <!-- tables -->
+        <table>
+            <colgroup>
+                <col style="background-color: yellow;">
+                <col style="background-color: blue;">
+                <col style="background-color: red;">
+                <col style="background-color: purple;">
+            </colgroup>
+            <caption>Table Caption</caption>
+            <thead>
+                <tr>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">1</td>
+                    <td>2</td>
+                    <td colspan="2">3</td>
+                </tr>
+                <tr>
+                    <td colspan="3">3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">footer</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
